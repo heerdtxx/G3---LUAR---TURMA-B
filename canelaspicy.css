@@ -1,0 +1,115 @@
+body {
+    background-color: #F5FFFA;
+    margin: 0; /* Remove margem padrão do body */
+    padding: 0; /* Remove padding padrão do body */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lucida Sans Typewriter', sans-serif; /* Alteração da fonte para Lucida Sans Typewriter */
+}
+
+.banner {
+    margin-top: 0.5rem; /* Margem superior do banner ajustada */
+    width: 100%;
+    max-width: 1000px;
+    height: 550px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.section_payment {
+    width: 100%; /* Ocupa toda a largura disponível */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os elementos na horizontal */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin-top: 3rem; /* Margem superior da seção ajustada */
+}
+
+.payment_container {
+    width: 100%;
+    max-width: 230px; /* Largura fixa para cada container de pagamento */
+    height: 100px;
+    background-color: #89A993;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #FFDDC8;
+}
+
+.box_socials {
+    width: 100%;
+    max-width: 220px; /* Largura fixa para o box de redes sociais */
+    height: 100px;
+    background-color: #89A993;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #FFDDC8;
+    gap: 30px;
+}
+
+.logo_luar {
+    padding: 5rem;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    opacity: 60%;
+}
+
+/* Media queries para tornar o layout responsivo */
+
+@media (max-width: 1200px) {
+    .banner {
+        height: 450px; /* Ajusta a altura do banner para telas menores */
+    }
+
+    .section_payment {
+        gap: 15px; /* Reduz o espaço entre os itens */
+        margin-top: 2rem; /* Ajusta a margem superior */
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 350px; /* Ajusta a altura do banner para telas menores */
+    }
+
+    .payment_container, .box_socials {
+        width: 90%; /* Ajusta a largura dos containers para telas menores */
+    }
+
+    .section_payment {
+        gap: 10px; /* Reduz ainda mais o espaço entre os itens */
+        margin-top: 1.5rem; /* Ajusta a margem superior */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 250px; /* Ajusta a altura do banner para telas muito pequenas */
+    }
+
+    .payment_container, .box_socials {
+        width: 100%; /* Ajusta a largura dos containers para telas muito pequenas */
+    }
+
+    .section_payment {
+        gap: 5px; /* Reduz o espaço entre os itens */
+        margin-top: 1rem; /* Ajusta a margem superior */
+    }
+}

@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Typewriter', sans-serif; /* Alteração da fonte para Roboto */
+}
+
+header {
+    background-color: #89A993;
+    padding: 40px 0;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 40px; /* Ajuste conforme necessário */
+}
+
+.logo img {
+    width: 50px; /* Ajuste conforme necessário */
+    height: auto;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto; /* Adicionado para empurrar o restante para a direita */
+}
+
+.left-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.left-nav a {
+    text-decoration: none;
+    color: #FFDDC8;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 65px;
+    color: #FFDDC8;
+    font-family: 'Roboto', sans-serif; /* Alteração da fonte para Roboto */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.right-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.right-nav a {
+    text-decoration: none;
+    color: #FFDDC8;
+    font-size: 18px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    left: 1320px; /* Mover para a direita */
+    bottom: 40px; /* Mover para cima */
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+body {
+    background-color: #F5FFFA;
+}
+
+
+.whatsapp-icon {
+    position: fixed; /* Posição fixa para ficar visível sempre */
+    bottom: 20px; /* Distância do ícone em relação ao rodapé */
+    right: 20px; /* Distância do ícone em relação ao lado direito */
+    z-index: 1000; /* Z-index alto para garantir que fique acima do conteúdo */
+    background-color: #25d366; /* Cor de fundo do ícone */
+    color: #fff; /* Cor do ícone */
+    width: 60px; /* Largura do ícone */
+    height: 60px; /* Altura do ícone */
+    border-radius: 50%; /* Bordas arredondadas para um visual mais suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; /* Tamanho do ícone */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar o ícone */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+.whatsapp-icon:hover {
+    background-color: #128c7e; /* Cor de fundo ao passar o mouse */
+}
+
+
+
+h2 {
+    font-size: 40px;
+    color: #89A993;
+    font-family: 'Lucida Sans Typewriter', sans-serif; /* Alteração da fonte para Typewriter */
+    position: relative;
+    left: 50%;
+    margin: 0.5rem;
+    transform: translateX(-50%);
+}
+.section_cardslider {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.card_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-snap-align: start;
+    flex: 1 1 calc(20% - 20px); /* Ajusta o tamanho das colunas e mantém o espaçamento */
+    box-sizing: border-box;
+}
+
+.card {
+    width: 220px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.card_text {
+    z-index: 1;
+    color: #fff;
+    font-size: 1.5em;
+    position: relative;
+    text-align: center;
+    margin-top: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.box_card {
+    width: 100px;
+    height: 50px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 10px; /* Espaçamento entre o card e o link */
+    text-decoration: none;
+}
+
+.box_card:hover {
+    background-color: #555;
+}
+
+
+/* Media Queries para responsividade */
+
+/* Para telas menores que 768px (tablets e smartphones em orientação vertical) */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 0;
+    }
+
+    .logo {
+        margin: 0;
+        margin-right: 1px; /* Reduz o espaçamento à direita da logo */
+    }
+
+    .title {
+        font-size: 40px; /* Reduz o tamanho do título */
+    }
+
+    .social-icons {
+        display: none; /* Esconde os ícones sociais em telas menores */
+    }
+
+    .slider {
+        width: 100%; /* Ajusta a largura do slider para ocupar 100% da largura do viewport */
+        max-width: none; /* Remove a largura máxima do slider */
+        height: auto; /* Altura automática para se adaptar ao conteúdo */
+    }
+
+    .slider img {
+        height: auto; /* Altura automática para se adaptar ao conteúdo */
+    }
+
+    .slider_nav {
+        bottom: 0; /* Move os controles de navegação para o fundo do slider */
+    }
+}
+
+/* Para telas menores que 480px (smartphones em orientação vertical) */
+@media (max-width: 480px) {
+    header {
+        padding: 30px 0;
+    }
+
+    .logo img {
+        width: 40px; /* Reduz o tamanho da logo para smartphones */
+    }
+
+    .left-nav a, .right-nav a {
+        font-size: 16px; /* Reduz o tamanho da fonte nos itens de navegação */
+    }
+
+    .title {
+        font-size: 30px; /* Reduz o tamanho do título */
+    }
+
+    .slider {
+        padding: 0; /* Remove o padding do slider */
+    }
+
+    .slider_nav {
+        bottom: 0; /* Mantém os controles de navegação no fundo do slider */
+    }
+}
