@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lucida Sans Typewriter', sans-serif; /* Alteração da fonte para Roboto */
 }
+
 
 body {
     background-color: #F5FFFA;
@@ -116,29 +117,50 @@ main {
 }
 
 .intro-image img {
-    width: 100%;
+    width: 130%;
     height: 88%;
     object-fit: cover;
 }
 
 .intro-text {
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 20%;
+    left: 24%;
     transform: translate(-50%, -50%);
     color: #000000;
     padding: 10px;
     width: 40%;
+    text-align: center;
+    font-size: 23px;
+}
+
+.intro-text-2 {
+    position: absolute;
+    top: 34%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    padding: 30px;
+    width: 40%;
+    font-size: 20px;
     text-align: justify;
-  
+    line-height: 25px;
 }
 
-.intro-text p {
-    margin-bottom: 20px;
-}
+@media (max-width: 768px) {
+    .title {
+        font-size: 40px;
+    }
 
-.intro-text a {
-    text-decoration: none;
-    color: #89A993;
-    font-weight: bold;
+    .left-nav a,
+    .right-nav a {
+        font-size: 16px;
+    }
+
+    .intro-text {
+        width: 90%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+    }
 }
