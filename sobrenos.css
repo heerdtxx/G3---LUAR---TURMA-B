@@ -101,7 +101,7 @@ header .container {
 }
 
 .about{
-    background-color: #FFFFFF;
+    background-color: #F5FFFA;
     width: 100%; 
     padding-left: 10%;
     padding-right: 10%;
@@ -123,13 +123,12 @@ header .container {
      border-radius: 8px;
    }
    
-   .about div h2{
+    .about div h2{
      font-size: 32px;
      margin-bottom: 14px;
    }
-   
-   .about2{
-    background-color: #FFFFFF;
+    .about2{
+    background-color: #F5FFFA;
     width: 100%; 
     padding-left: 10%;
     padding-right: 10%;
@@ -141,22 +140,50 @@ header .container {
     justify-content: space-between;
    }
    
-   .about div{
+   .about2 div{
      max-width: 50%;
-     padding-left: px;
+     padding-right: 40px;
+     margin-left: 10%;
    }
    
-   .about img{
+   .about2 img{
      max-width: 500px;
      border-radius: 8px;
    }
    
-   .about div h2{
+    .about2 div h2{
      font-size: 32px;
      margin-bottom: 14px;
    }
-
-   footer {
+        
+    .about3{
+    background-color: #F5FFFA;
+    width: 100%; 
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   
+   .about3 div{
+     max-width: 50%;
+     padding-right: 40px;
+   }
+   
+   .about3 img{
+     max-width: 450px;
+     border-radius: 8px;
+   }
+   
+    .about3 div h2{
+     font-size: 32px;
+     margin-bottom: 14px;
+   }
+ footer {
     background-color: #89A993;
     padding: 20px 0;
     color: #000;
@@ -194,4 +221,64 @@ header .container {
     width: 60px;
     position: absolute;
     right: 920px;
+    margin-left: px;
+}
+
+@media (max-width: 768px){
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .left-nav, .right-nav {
+        position: static;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        left: 0;
+    }
+    .about{
+        background-color: #FFFFFF;
+        width: 100%; 
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       }
+       
+       .about div{
+         max-width: 50%;
+         padding: 40px;
+       }
+       
+       .about img{
+         max-width: 150px;
+         border-radius: 8px;
+       }
+       
+       .about div h2{
+         font-size: 12px;
+         margin-bottom: 14px;
+       }
 }
