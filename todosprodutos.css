@@ -164,7 +164,9 @@ h2 {
 
 .card_text {
     z-index: 1;
-    color: #fff;
+    border-radius: 10px;
+    background-color: #89A993;
+    color: #FFDDC8;
     font-size: 1.5em;
     position: relative;
     text-align: center;
@@ -174,14 +176,14 @@ h2 {
 .box_card {
     width: 100px;
     height: 50px;
-    background-color: #333;
-    border-radius: 10px;
+    background-color: #89A993;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-    color: #fff;
+    color: #FFDDC8;
     margin-top: 10px; /* Espaçamento entre o card e o link */
     text-decoration: none;
 }

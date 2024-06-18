@@ -166,7 +166,9 @@ h2 {
 
 .card_text {
     z-index: 1;
-    color: #fff;
+    border-radius: 5px;
+    background-color: #89A993;
+    color: #FFDDC8;
     font-size: 1.5em;
     position: relative;
     text-align: center;
