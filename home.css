@@ -1,20 +1,20 @@
+/* Estilos globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans Typewriter', sans-serif; /* Alteração da fonte para Roboto */
+    font-family: 'Lucida Sans Typewriter', sans-serif;
 }
-
 
 body {
     background-color: #F5FFFA;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
     background-color: #89A993;
     padding: 20px 0;
-    position: relative;
 }
 
 header .container {
@@ -25,61 +25,46 @@ header .container {
     margin: 0 auto;
 }
 
-.logo {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
 .logo img {
     width: 60px;
     height: auto;
+    position: relative;
+    right: 60px;
 }
 
-.left-nav {
+.left-nav{
+    position: relative;
+    left: 300px;
+}
+
+.right-nav{
+    position: relative;
+    right: 80px;
+}
+
+nav {
     flex: 2;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
-.left-nav ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.left-nav a {
+nav a {
     text-decoration: none;
     color: #FFDDC8;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .title {
     flex: 3;
-    font-size: 65px;
+    font-size: 4rem;
     color: #FFDDC8;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
-}
-
-.right-nav {
-    flex: 2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.right-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.right-nav a {
-    text-decoration: none;
-    color: #FFDDC8;
-    font-size: 20px;
 }
 
 .social-icons {
@@ -88,15 +73,13 @@ header .container {
     gap: 10px;
     justify-content: flex-end;
     align-items: center;
-}
-
-.social-icons a {
-    display: inline-block;
+    position: relative;
+    left: 80px;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 40px;
+    height: 40px;
 }
 
 main {
@@ -112,55 +95,373 @@ main {
 
 .intro-image {
     width: 100%;
-    height: 100vh; /* Ajusta a altura da imagem para ocupar a tela inteira */
+    height: 88vh;
     overflow: hidden;
 }
 
 .intro-image img {
-    width: 130%;
-    height: 88%;
+    width: 140%;
+    height: 100%;
     object-fit: cover;
 }
 
-.intro-text {
+.intro-text-container {
     position: absolute;
-    top: 20%;
-    left: 24%;
+    top: 50%;
+    left: 27%;
     transform: translate(-50%, -50%);
-    color: #000000;
-    padding: 10px;
-    width: 40%;
+    width: 50%;
     text-align: center;
-    font-size: 23px;
+}
+
+.intro-text {
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .intro-text-2 {
-    position: absolute;
-    top: 34%;
-    left: 24%;
-    transform: translate(-50%, -50%);
-    color: #000000;
-    padding: 30px;
-    width: 40%;
-    font-size: 20px;
+    color: #000;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     text-align: justify;
-    line-height: 25px;
+    margin-bottom: 0.80rem;
+}
+
+.mais a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.mais a:hover {
+    text-decoration: underline;
+}
+
+.produtos {
+    text-align: center;
+    background-color: #F5FFFA;
+    padding: 2rem 0;
+}
+
+.produtos h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+}
+
+.produto-item {
+    max-width: 300px;
+    text-align: center;
+}
+
+.produto-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto-item p {
+    margin-top: 0.5rem;
+}
+
+.btn-veja-mais {
+    background-color: #FFDDC8;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.btn-veja-mais:hover {
+    background-color: #fbd4bb;
+    text-decoration: none; /* Garante que o sublinhado não aparece ao passar o mouse */
+}
+
+.aromas {
+    position: relative;
+    background-color: #FFDDC8;
+    margin-top: 10px;
+    padding: 60px 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+    }
+    
+.aromas img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-top: 30px;
+    
+    }
+    
+.aromas-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semitransparente */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+.aromas-text p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+    
+.aromas-text p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+    
+.aromas img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+    
+.btn-saiba-mais {
+    background-color: #FFDDC8;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none; /* Remove o sublinhado */
+    display: inline-block; /* Necessário para aplicar padding corretamente em <a> */
+}
+    
+.btn-saiba-mais:hover {
+    background-color: #fbd4bb;
+    text-decoration: none; /* Garante que o sublinhado não aparece ao passar o mouse */
+}
+
+.difusores {
+    background-color: #F5FFFA;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.difusores h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.difusores-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.difusores-content img {
+    border-radius: 8px;
+}
+
+.cta {
+    margin-top: 3rem;
+}
+
+.cta p {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.aaa {
+    background-color: #FFDDC8;
+    color: black;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.aaa:hover {
+    background-color: #fbd4bb;
+}
+
+.contact {
+    margin-top: 2rem;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.contact .icons {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact .icons img {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    background-color: #89A993;
+    padding: 20px 0;
+    color: #000;
+    font-size: 1rem;
+}
+
+.footer-container {
+    display:flex;
+    max-width: 1000px;
+    margin:0 auto;
+    padding:  1rem;
+    
+}
+
+.footer-section {
+    flex: 1;
+    text-align: justify;
+    position: relative;
+    left: 150px;
+    
+}
+
+.footer-section a {
+    text-decoration: none; 
+    color: inherit; 
+}    
+
+.footer-section a:hover {
+    text-decoration: none; 
+    background-color: #bedec5; 
+    border-radius: 2px; 
+}
+
+.footer-logo img {
+    width: 60px;
+    position: absolute;
+    top: 3890px;
+    right: 920px;
 }
 
 @media (max-width: 768px) {
-    .title {
-        font-size: 40px;
+    header .container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .left-nav a,
-    .right-nav a {
-        font-size: 16px;
+    .logo img {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .left-nav, .right-nav {
+        position: static;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+        left: 0;
+    }
+
+    .intro-text-container {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .produtos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aromas img {
+        max-width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        position: static;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
     }
 
     .intro-text {
-        width: 90%;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -40%);
+        font-size: 1rem;
+    }
+
+    .intro-text-2 {
+        font-size: 0.875rem;
+    }
+
+    .mais a {
+        font-size: 1.25rem;
+    }
+
+    .produtos h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-veja-mais, .btn-saiba-mais {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+
+    .aromas-text p {
+        font-size: 1rem;
+    }
+
+    .cta p {
+        font-size: 1.25rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        padding: 0.5rem;
     }
 }
