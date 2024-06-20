@@ -148,6 +148,7 @@ body {
     scroll-snap-align: start;
     object-fit: cover;
 }
+
 .slider_nav {
     display: flex;
     column-gap: 1rem;
