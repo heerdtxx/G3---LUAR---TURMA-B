@@ -1,15 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Typewriter', sans-serif;
+}
+
 body {
     background-color: #F5FFFA;
-    margin: 0; /* Remove margem padrão do body */
-    padding: 0; /* Remove padding padrão do body */
+    color: #333;
+    line-height: 1.6;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Lucida Sans Typewriter', sans-serif; /* Alteração da fonte para Lucida Sans Typewriter */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #89A993;
+    padding: 10px 0;
+    width: 100%; /* Adicionado para garantir que o header ocupe toda a largura da tela */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFDDC8;
+    font-size: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: #FFDDC8;
+    text-align: center;
+    flex: 1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
 }
 
 .banner {
-    margin-top: 0.5rem; /* Margem superior do banner ajustada */
+    margin-top: 0.5rem;
     width: 100%;
     max-width: 1000px;
     height: 550px;
@@ -27,21 +90,21 @@ body {
 .banner_image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Redimensiona a imagem mantendo a proporção e cortando o excesso */
+    object-fit: cover;
 }
 
 .section_payment {
-    width: 100%; /* Ocupa toda a largura disponível */
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza os elementos na horizontal */
-    gap: 20px; /* Espaçamento entre os itens */
-    margin-top: 3rem; /* Margem superior da seção ajustada */
+    justify-content: center;
+    gap: 20px;
+    margin-top: 3rem;
 }
 
 .payment_container {
     width: 100%;
-    max-width: 230px; /* Largura fixa para cada container de pagamento */
+    max-width: 230px;
     height: 100px;
     background-color: #89A993;
     border-radius: 10px;
@@ -55,7 +118,7 @@ body {
 
 .box_socials {
     width: 100%;
-    max-width: 220px; /* Largura fixa para o box de redes sociais */
+    max-width: 220px;
     height: 100px;
     background-color: #89A993;
     border-radius: 10px;
@@ -78,45 +141,86 @@ body {
     opacity: 60%;
 }
 
-/* Media queries para tornar o layout responsivo */
-
 @media (max-width: 1200px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
     .banner {
-        height: 450px; /* Ajusta a altura do banner para telas menores */
+        height: 450px;
     }
 
     .section_payment {
-        gap: 15px; /* Reduz o espaço entre os itens */
-        margin-top: 2rem; /* Ajusta a margem superior */
+        gap: 15px;
+        margin-top: 2rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+    header .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 0.875rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
     .banner {
-        height: 350px; /* Ajusta a altura do banner para telas menores */
+        height: 350px;
     }
 
     .payment_container, .box_socials {
-        width: 90%; /* Ajusta a largura dos containers para telas menores */
+        width: 90%;
     }
 
     .section_payment {
-        gap: 10px; /* Reduz ainda mais o espaço entre os itens */
-        margin-top: 1.5rem; /* Ajusta a margem superior */
-    }
-}
-
-@media (max-width: 480px) {
-    .banner {
-        height: 250px; /* Ajusta a altura do banner para telas muito pequenas */
-    }
-
-    .payment_container, .box_socials {
-        width: 100%; /* Ajusta a largura dos containers para telas muito pequenas */
-    }
-
-    .section_payment {
-        gap: 5px; /* Reduz o espaço entre os itens */
-        margin-top: 1rem; /* Ajusta a margem superior */
+        gap: 10px;
+        margin-top: 1.5rem;
     }
 }

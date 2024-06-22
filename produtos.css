@@ -2,13 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans Typewriter', sans-serif; /* Alteração da fonte para Roboto */
+    font-family: 'Lucida Sans Typewriter', sans-serif;
+}
+
+body {
+    background-color: #F5FFFA;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
     background-color: #89A993;
-    padding: 40px 0;
-    position: relative;
+    padding: 10px 0;
 }
 
 header .container {
@@ -17,80 +22,47 @@ header .container {
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    position: relative;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    margin-right: 40px; /* Ajuste conforme necessário */
 }
 
 .logo img {
-    width: 50px; /* Ajuste conforme necessário */
+    width: 60px;
     height: auto;
 }
 
-.left-nav {
+nav {
+    flex: 1;
     display: flex;
-    align-items: center;
-    margin-right: auto; /* Adicionado para empurrar o restante para a direita */
+    justify-content: center;
 }
 
-.left-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-.left-nav a {
-    text-decoration: none;
-    color: #FFDDC8;
-    font-size: 18px;
-}
-
-.title {
-    font-size: 65px;
-    color: #FFDDC8;
-    font-family: 'Roboto', sans-serif; /* Alteração da fonte para Roboto */
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.right-nav ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.right-nav a {
+nav a {
     text-decoration: none;
     color: #FFDDC8;
-    font-size: 18px;
+    font-size: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: #FFDDC8;
+    text-align: center;
+    flex: 1;
 }
 
 .social-icons {
     display: flex;
     gap: 10px;
-    position: absolute;
-    left: 1320px; /* Mover para a direita */
-    bottom: 40px; /* Mover para cima */
-}
-
-.social-icons a {
-    display: inline-block;
+    align-items: center;
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-/*body*/
-
-body {
-    background-color: #F5FFFA;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -408,22 +380,37 @@ h2 {
 /* Media Queries para responsividade */
 
 /* Para telas menores que 768px (tablets e smartphones em orientação vertical) */
-@media (max-width: 768px) {
-    header {
-        padding: 20px 0;
+@media (max-width: 1200px) {
+    header .container {
+        flex-wrap: wrap;
     }
 
-    .logo {
-        margin: 0;
-        margin-right: 1px; /* Reduz o espaçamento à direita da logo */
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .title {
-        font-size: 40px; /* Reduz o tamanho do título */
+        font-size: 2.5rem;
+        margin-top: 10px;
     }
 
     .social-icons {
-        display: none; /* Esconde os ícones sociais em telas menores */
+        justify-content: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 50px;
     }
 
     .slider {
@@ -441,22 +428,36 @@ h2 {
     }
 }
 
-/* Para telas menores que 480px (smartphones em orientação vertical) */
 @media (max-width: 480px) {
-    header {
-        padding: 30px 0;
+    header .container {
+        width: 100%;
+        padding: 0 10px;
     }
 
-    .logo img {
-        width: 40px; /* Reduz o tamanho da logo para smartphones */
+    .logo {
+        display: none;
     }
 
-    .left-nav a, .right-nav a {
-        font-size: 16px; /* Reduz o tamanho da fonte nos itens de navegação */
+    .social-icons {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 0.875rem;
     }
 
     .title {
-        font-size: 30px; /* Reduz o tamanho do título */
+        font-size: 1.5rem;
     }
 
     .slider {
@@ -466,4 +467,22 @@ h2 {
     .slider_nav {
         bottom: 0; /* Mantém os controles de navegação no fundo do slider */
     }
+
+    .footer-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer-logo img {
+        width: 50px;
+    }
 }
+
+
+
+
+
+
+
+
+
