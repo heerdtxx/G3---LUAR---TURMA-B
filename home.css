@@ -1,3 +1,4 @@
+/* Estilos principais */
 * {
     margin: 0;
     padding: 0;
@@ -183,7 +184,7 @@ main {
 }
 
 .aromas img {
-    width: 100%;
+    width: 30%;
     height: auto;
     display: block;
     border-radius: 8px;
@@ -195,6 +196,7 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 50%;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 30px;
     border-radius: 10px;
@@ -209,12 +211,6 @@ main {
 .aromas-text p {
     font-size: 1.2em;
     line-height: 1.6em;
-}
-
-.aromas img {
-    max-width: 30%;
-    height: auto;
-    border-radius: 8px;
 }
 
 .btn-saiba-mais {
@@ -341,6 +337,7 @@ footer {
     margin-top: 10px;
 }
 
+/* Estilos responsivos */
 @media (max-width: 1200px) {
     header .container {
         display: flex;
@@ -404,8 +401,12 @@ footer {
         padding: 0 10px;
     }
 
-    .logo img {
-        width: 50px;
+    .logo {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
     }
 
     nav {
@@ -441,11 +442,7 @@ footer {
 
     .intro-text-2 {
         font-size: 1rem;
-    }
-
-    .produtos-container {
-        flex-direction: column;
-        gap: 1rem;
+        line-height: 1.5rem;
     }
 
     .aromas-text {
@@ -453,18 +450,9 @@ footer {
         padding: 20px;
     }
 
-    .aromas-text p {
-        font-size: 1rem;
-    }
-
-    .aromas img {
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .btn-saiba-mais {
-        padding: 8px 16px;
-        font-size: 0.875rem;
+    .produtos-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .difusores-content {
@@ -472,13 +460,8 @@ footer {
         align-items: center;
     }
 
-    .cta p {
-        font-size: 1.25rem;
-    }
-
-    .aaa {
-        padding: 0.75rem 1.5rem;
-        font-size: 0.875rem;
+    .contact p {
+        font-size: 1rem;
     }
 
     .contact .icons img {
@@ -487,10 +470,16 @@ footer {
     }
 
     .footer-container {
-        padding: 0 1rem;
+        width: 100%;
+        padding: 0 10px;
     }
 
     .footer-logo img {
-        width: 40px;
+        width: 50px;
+    }
+
+    .produtos-container img, .difusores-content img, .aromas img {
+        width: 100%;
+        height: auto;
     }
 }
