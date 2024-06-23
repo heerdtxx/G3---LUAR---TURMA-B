@@ -200,15 +200,17 @@ footer {
 
 .footer-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
+    text-align: center;
 }
 
 .footer-section {
     flex: 1;
-    text-align: justify;
-    margin-left: 1rem;
+    text-align: center;
 }
 
 .footer-section a {
@@ -224,9 +226,7 @@ footer {
 
 .footer-logo img {
     width: 60px;
-    position: absolute;
-    top: 3890px;
-    right: 920px;
+    margin-top: 10px;
 }
 
 /* Media Queries for responsiveness */
@@ -252,7 +252,6 @@ footer {
     .social-icons {
         justify-content: center;
     }
-
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -295,7 +294,7 @@ footer {
     .title {
         font-size: 1.5rem;
     }
-
+    
     .footer-container {
         width: 100%;
         padding: 0 10px;

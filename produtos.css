@@ -347,6 +347,44 @@ h2 {
     text-decoration: none;
 }
 
+footer {
+    background-color: #89A993;
+    padding: 20px 0;
+    color: #000;
+    font-size: 1rem;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-section a:hover {
+    text-decoration: none;
+    background-color: #bedec5;
+    border-radius: 2px;
+}
+
+.footer-logo img {
+    width: 60px;
+    margin-top: 10px;
+}
+
 /* Estilização da barra de rolagem para navegadores Webkit (Chrome, Safari) */
 .slider::-webkit-scrollbar,
 .slider_card::-webkit-scrollbar {
