@@ -112,15 +112,18 @@ header .container {
     align-items: center;
     justify-content: space-between;
    }
-   
-   .about div{
-     max-width: 50%;
-     padding-right: 40px;
+   .div1{
+    float: left;
+    max-width: 45%;
+    border-radius: 8px;
+    margin: right 35px; 
    }
    
-   .about img{
-     max-width: 500px;
+   .div2 img{
+    float: left;
+     max-width:500px;
      border-radius: 8px;
+     margin: right 35px;
    }
    
     .about div h2{
@@ -140,14 +143,16 @@ header .container {
     justify-content: space-between;
    }
    
-   .about2 div{
+   .divmateria{
      max-width: 50%;
-     padding-right: 40px;
-     margin-left: 10%;
+     padding-right: 10px;
+     margin-left: 15%;
+     border-radius: 8px;
+     text-align: right;
    }
    
-   .about2 img{
-     max-width: 500px;
+   .divfoto img{
+     max-width: 550px;
      border-radius: 8px;
    }
    
@@ -169,21 +174,28 @@ header .container {
     justify-content: space-between;
    }
    
-   .about3 div{
-     max-width: 50%;
-     padding-right: 40px;
+   .divmarketing{
+    float: left;
+    max-width: 70%;
+    border-radius: 8px;
+    margin-right: 25%; 
    }
-   
-   .about3 img{
-     max-width: 450px;
-     border-radius: 8px;
+
+
+   .divolfativo img{
+    float: left;
+    max-width:500px;
+    border-radius: 8px;
+    margin: right 35px;
    }
    
     .about3 div h2{
      font-size: 32px;
      margin-bottom: 14px;
+     border-radius: 8px;
    }
- footer {
+
+   footer {
     background-color: #89A993;
     padding: 20px 0;
     color: #000;
@@ -191,53 +203,48 @@ header .container {
 }
 
 .footer-container {
-    display:flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1000px;
-    margin:0 auto;
-    padding:  1rem;
-    
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
 }
 
 .footer-section {
     flex: 1;
-    text-align: justify;
-    position: relative;
-    left: 150px;
-    
+    text-align: center;
 }
 
 .footer-section a {
-    text-decoration: none; 
-    color: inherit; 
-}    
+    text-decoration: none;
+    color: inherit;
+}
 
 .footer-section a:hover {
-    text-decoration: none; 
-    background-color: #bedec5; 
-    border-radius: 2px; 
+    text-decoration: none;
+    background-color: #bedec5;
+    border-radius: 2px;
 }
 
 .footer-logo img {
     width: 60px;
-    position: absolute;
-    right: 920px;
-    margin-left: px;
+    margin-top: 10px;
 }
 
 @media (max-width: 768px){
     header .container {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
     }
 
     .logo img {
-        position: static;
         margin-bottom: 10px;
-    }
-
-    .left-nav, .right-nav {
-        position: static;
-        margin: 10px 0;
     }
 
     nav ul {
@@ -246,39 +253,164 @@ header .container {
     }
 
     .title {
-        font-size: 2rem;
+        font-size: 2.5rem;
         margin-top: 10px;
     }
 
     .social-icons {
         justify-content: center;
-        left: 0;
     }
-    .about{
-        background-color: #FFFFFF;
-        width: 100%; 
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-top: 80px;
-        padding-bottom: 80px;
-       
-        display: flex;
+
+    .about, .about2, .about3 {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .about2{
+        background-color: #89A993;
+    }
+
+    .div1, .divmateria, .divmarketing {
+        max-width: 65%;
+        margin-right: 0;
+        margin-bottom: 20px; /* Adiciona espaço entre os elementos */
+        text-align: center;
+    }
+
+    .div2 img, .divfoto img,{
+        max-width: 70%;
+        margin-left: 100px;
+        margin-bottom: 20px; /* Adiciona espaço entre os elementos */
         align-items: center;
-        justify-content: space-between;
-       }
-       
-       .about div{
-         max-width: 50%;
-         padding: 40px;
-       }
-       
-       .about img{
-         max-width: 150px;
-         border-radius: 8px;
-       }
-       
-       .about div h2{
-         font-size: 12px;
-         margin-bottom: 14px;
-       }
+    
+    }
+    .divolfativo img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px; /* Adiciona espaço entre os elementos */
+        align-items: center;  
+    }
+    .divfoto img{
+        max-width: 70%;
+        margin-left: 95px;
+
+    }
+    
+
+    .divmateria {
+        margin-left: 0;
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .divmarketing {
+        margin-right: 0;
+    }
+
+    .about div h2, .about2 div h2, .about3 div h2 {
+        font-size: 28px; /* Ajusta o tamanho da fonte */
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 50px;
+    }
 }
+
+@media (max-width: 1200px) {
+    .about, .about2, .about3 {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .about2{
+        background-color: #89A993;
+    }
+
+    .div1, .divmateria, .divmarketing {
+        max-width: 65%;
+        margin-right: 0;
+        margin-bottom: 20px; 
+        text-align: center;
+    }
+    .divmateria{
+        margin-right: 160px;
+        max-width: 65%;
+        margin-bottom: 20px; 
+        text-align: center;
+    }
+    }
+
+     .divolfativo img {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px; /* Adiciona espaço entre os elementos */
+        align-items: center;
+    }
+    .divfoto img{
+        max-width: 70%;
+        margin-left: 160px;
+        margin-bottom: 20px; /* Adiciona espaço entre os elementos */
+        align-items: center;
+    }
+    .div2 img{
+        max-width: 55%;
+        margin-left: 250px;
+        margin-bottom: 20px; /* Adiciona espaço entre os elementos */
+        align-items: center;
+
+    }
+
+    .about div h2, .about2 div h2, .about3 div h2 {
+        font-size: 28px; /* Ajusta o tamanho da fonte */
+    }
+    @media (max-width: 600px) {
+        header .container {
+            width: 100%;
+            padding: 0 5%;
+        }
+    
+        .title {
+            font-size: 2rem;
+        }
+    
+        .about, .about2, .about3 {
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    
+        .div1, .divmateria, .divmarketing {
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px; /* Adiciona espaço entre os elementos */
+            text-align: center;
+        }
+    
+        .div2 img, .divfoto img, .divolfativo img {
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 15px; /* Adiciona espaço entre os elementos */
+            align-items: center;
+        }
+    
+        .about div h2, .about2 div h2, .about3 div h2 {
+            font-size: 24px; /* Ajusta o tamanho da fonte */
+        }
+    
+        .footer-container {
+            padding: 20px 5%;
+        }
+    
+        .footer-logo img {
+            width: 40px;
+        }
+    }
+
