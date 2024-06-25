@@ -141,6 +141,17 @@ nav a {
     opacity: 60%;
 }
 
+.logo_luar img {
+    padding: 5rem;
+    display: flex;
+    width: 1200px;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    opacity: 60%;
+}
+
+
 @media (max-width: 1200px) {
     header .container {
         display: flex;
@@ -222,5 +233,15 @@ nav a {
     .section_payment {
         gap: 10px;
         margin-top: 1.5rem;
+    }
+
+    .logo_luar img {
+        padding: 5rem;
+        display: flex;
+        width: 375.2px;
+        height: 375.2px;
+        align-items: center;
+        justify-content: center;
+        opacity: 60%;
     }
 }
