@@ -510,6 +510,42 @@ footer {
         bottom: 0; /* Mantém os controles de navegação no fundo do slider */
     }
 
+    .box_img {
+        width: 375.2px;
+        height: 100%;
+        object-fit: cover; /* Redimensiona a imagem mantendo a proporção e cortando o excesso */
+    }
+
+    .box_image {
+        width: 375.2px;
+        height: 450px;
+        background-color: #fff;
+        border-radius: 10px;
+        border-color: #333;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        color: #333;
+    
+    }
+    
+
+    .box_form {
+        width: 375.2px;
+        height: 220px;
+        background-color: #89A993;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        color: #333;
+        text-decoration: none;
+    }
+
     .footer-container {
         width: 100%;
         padding: 0 10px;
