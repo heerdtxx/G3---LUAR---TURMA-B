@@ -3,18 +3,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lucida Sans Typewriter', sans-serif;
 }
 
 body {
     background-color: #F5FFFA;
     color: #333;
+    line-height: 1.6;
 }
 
-/* Cabeçalho */
 header {
     background-color: #89A993;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 header .container {
@@ -23,7 +23,6 @@ header .container {
     align-items: center;
     width: 90%;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 .logo img {
@@ -31,38 +30,62 @@ header .container {
     height: auto;
 }
 
-nav.left-nav, nav.right-nav {
+nav {
     flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
     gap: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #FFDDC8;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .title {
-    flex: 2;
-    font-size: 4rem;
+    font-size: 2rem;
     color: #FFDDC8;
     text-align: center;
+    flex: 1;
 }
 
 .social-icons {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #25d366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    background-color: #128c7e;
 }
 
 /* Conteúdo do Blog */
@@ -208,17 +231,27 @@ footer {
 }
 
 /* Responsividade */
-@media screen and (max-width: 1024px) {
+@media (max-width: 1200px) {
     header .container {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
-    .title {
-        margin: 20px 0;
+    .logo img {
+        margin-bottom: 10px;
     }
 
     nav ul {
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
     }
 
     .card {
@@ -238,24 +271,63 @@ footer {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .title {
-        font-size: 2.5rem;
+@media (max-width: 480px) {
+    header .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
     }
 
     nav ul {
-        gap: 10px;
+        flex-direction: column;
+        gap: 5px;
     }
 
-    .social-icons img {
-        width: 30px;
-        height: 30px;
+    nav a {
+        font-size: 0.875rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .slider {
+        padding: 0; /* Remove o padding do slider */
+    }
+
+    .slider_nav {
+        bottom: 0; /* Mantém os controles de navegação no fundo do slider */
+    }
+
+    .footer-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer-logo img {
+        width: 50px;
     }
 
     .card {
-        width: calc(100% - 40px);
-        margin-right: 0;
-        margin-left: 0;
+        width: 95%; /* Ajuste para 95% da largura da tela */
+        margin: 10px auto; /* Centraliza horizontalmente */
+    }
+
+    .card:nth-child(n) {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .article-container h1 {
