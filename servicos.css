@@ -6,7 +6,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-image: url('foto\ serviços/mauamu.jpeg');
     background-size: cover;
-    background-position: center;
+    background-position: center -2%;
     background-repeat: no-repeat;
     overflow-x: hidden;
 }
@@ -97,6 +97,12 @@ section p {
     max-width: 500px;
     width: 90%;
     height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
 section h1 {

@@ -393,6 +393,13 @@ footer {
     .footer-logo img {
         width: 50px;
     }
+
+    .btn-veja-mais {
+        position: relative;
+        top: 20px;
+    }
+
+
 }
 
 @media (max-width: 600px) {
@@ -482,4 +489,27 @@ footer {
         width: 100%;
         height: auto;
     }
+
+    .btn-veja-mais {
+        margin-top: 1.5rem; /* Adiciona espaço extra para o botão */
+    }
+
+    .btn-veja-mais {
+       margin: 80px;
+    }
+
+    .btn-veja-mais {
+        position: relative;
+        top: 20px;
+    }
+
+}
+
+@media (max-width: 1625px){
+
+    .btn-veja-mais {
+        position: relative;
+        top: 20px;
+    }
+    
 }
