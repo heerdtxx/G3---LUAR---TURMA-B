@@ -102,6 +102,106 @@ section h2 {
     margin-bottom: 10px;
 }
 
+body {
+    background-color: #F5FFFA;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('foto\ serviços/mauamu.jpeg');
+    background-size: cover;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #89A993;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFDDC8;
+    font-size: 1rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: #FFDDC8;
+    text-align: center;
+    flex: 1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px; /* Add margin-bottom to create space between sections and footer */
+}
+
+section p {
+    width: 500px;
+    height: 200px;
+}
+
+section h1 {
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+section h2 {
+    color: #3E5650;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+}
+
 footer {
     background-color: #89A993;
     padding: 20px 0;
@@ -138,4 +238,8 @@ footer {
 .footer-logo img {
     width: 60px;
     margin-top: 10px;
+}
+
+footer {
+    margin-top: 120px; 
 }
