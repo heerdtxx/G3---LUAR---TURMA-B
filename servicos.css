@@ -10,9 +10,15 @@ body {
     background-repeat: no-repeat;
 }
 
+body {
+    background-color: #F5FFFA;
+    color: #333;
+    line-height: 1.6;
+}
+
 header {
     background-color: #89A993;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 header .container {
@@ -23,82 +29,45 @@ header .container {
     margin: 0 auto;
 }
 
-.logo {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
 .logo img {
     width: 60px;
     height: auto;
 }
 
-.left-nav {
-    flex: 2;
+nav {
+    flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
 }
 
-.left-nav ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    margin: 0;
-    padding: 0;
 }
 
-.left-nav a {
+nav a {
     text-decoration: none;
     color: #FFDDC8;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .title {
-    flex: 3;
-    font-size: 65px;
+    font-size: 2rem;
     color: #FFDDC8;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
-}
-
-.right-nav {
-    flex: 2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.right-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-.right-nav a {
-    text-decoration: none;
-    color: #FFDDC8;
-    font-size: 20px;
+    flex: 1;
 }
 
 .social-icons {
-    flex: 1;
     display: flex;
     gap: 10px;
-    justify-content: flex-end;
     align-items: center;
 }
 
-.social-icons a {
-    display: inline-block;
-}
-
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 }
 
 main {
@@ -135,29 +104,38 @@ section h2 {
 
 footer {
     background-color: #89A993;
+    padding: 20px 0;
     color: #000;
     font-size: 1rem;
-    margin-top: 40px;
 }
 
 .footer-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
 }
 
 .footer-section {
     flex: 1;
-    text-align: justify;
-    position: relative;
-    left: 170px;
+    text-align: center;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-section a:hover {
+    text-decoration: none;
+    background-color: #bedec5;
+    border-radius: 2px;
 }
 
 .footer-logo img {
     width: 60px;
-    display: block;
-    margin: 0 auto;
-    right: 480px;
-    top:65px;
-    position: relative;
+    margin-top: 10px;
 }
