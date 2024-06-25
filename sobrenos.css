@@ -9,14 +9,13 @@
 body {
     background-color: #F5FFFA;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
     background-color: #89A993;
-    padding: 20px 0;
-    position: relative;
+    padding: 10px 0;
 }
-
 
 header .container {
     display: flex;
@@ -26,78 +25,45 @@ header .container {
     margin: 0 auto;
 }
 
-.logo {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
 .logo img {
     width: 60px;
     height: auto;
 }
 
-.left-nav {
-    flex: 2;
+nav {
+    flex: 1;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    justify-content: center;
 }
 
-.left-nav ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-.left-nav a {
+nav a {
     text-decoration: none;
     color: #FFDDC8;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .title {
-    flex: 3;
-    font-size: 65px;
+    font-size: 2rem;
     color: #FFDDC8;
-    font-family: 'Roboto', sans-serif;
     text-align: center;
-}
-
-.right-nav {
-    flex: 2;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.right-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.right-nav a {
-    text-decoration: none;
-    color: #FFDDC8;
-    font-size: 20px;
+    flex: 1;
 }
 
 .social-icons {
-    flex: 1;
     display: flex;
     gap: 10px;
-    justify-content: flex-end;
     align-items: center;
 }
 
-.social-icons a {
-    display: inline-block;
-}
-
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 }
 
 .about{
@@ -232,6 +198,7 @@ header .container {
     width: 60px;
     margin-top: 10px;
 }
+
 
 @media (max-width: 768px){
     header .container {
@@ -369,7 +336,7 @@ header .container {
         margin-bottom: 20px; 
         text-align: center;
     }
-    }
+    
 
      .divolfativo img {
         max-width: 100%;
@@ -395,6 +362,7 @@ header .container {
     .about div h2, .about2 div h2, .about3 div h2 {
         font-size: 28px; /* Ajusta o tamanho da fonte */
     }
+}
     @media (max-width: 600px) {
         header .container {
             width: 100%;

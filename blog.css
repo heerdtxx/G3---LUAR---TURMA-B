@@ -210,6 +210,7 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
     padding: 1rem;
+<<<<<<< HEAD
 }
 
 .footer-section {
@@ -218,10 +219,30 @@ footer {
 
 .footer-section h2, .footer-section a, .footer-logo, .footer-section p {
     margin-bottom: 10px;
+=======
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-section a:hover {
+    text-decoration: none;
+    background-color: #bedec5;
+    border-radius: 2px;
+>>>>>>> 5a0411d940ecad8d1fdc1547101f689f6e8f6f30
 }
 
 .footer-logo img {
     width: 60px;
+<<<<<<< HEAD
     display: block;
     margin: 10px auto;
 }
@@ -230,6 +251,11 @@ footer {
     margin-top: 10px;
 }
 
+=======
+    margin-top: 10px;
+}
+
+>>>>>>> 5a0411d940ecad8d1fdc1547101f689f6e8f6f30
 /* Responsividade */
 @media (max-width: 1200px) {
     header .container {
