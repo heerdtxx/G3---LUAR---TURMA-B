@@ -369,7 +369,7 @@ header .container {
         margin-bottom: 20px; 
         text-align: center;
     }
-    }
+    
 
      .divolfativo img {
         max-width: 100%;
@@ -395,6 +395,7 @@ header .container {
     .about div h2, .about2 div h2, .about3 div h2 {
         font-size: 28px; /* Ajusta o tamanho da fonte */
     }
+}
     @media (max-width: 600px) {
         header .container {
             width: 100%;
